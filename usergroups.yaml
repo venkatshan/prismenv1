@@ -1,0 +1,16 @@
+---
+
+- hosts: boaservers
+  sudo: yes
+  tasks:
+  - name: create group
+    group: name=weblogic state=present
+  - name: user weblogic
+    user: name=weblogic password=Provenir1 shell=/bin/bash group=weblogic  home=/home/weblogic state=present
+    
+  - name: create group
+    group: name=provenir state=present
+  - name: user provenir
+    user: name=provenir password=Provenir1 shell=/bin/bash group=provenir home=/home/provenir state=present
+     
+

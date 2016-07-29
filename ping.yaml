@@ -1,0 +1,8 @@
+---
+
+- hosts: boaservers
+
+  tasks: 
+  - name: Ping
+    action: ping
+

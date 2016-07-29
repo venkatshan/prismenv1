@@ -1,0 +1,7 @@
+---
+
+- hosts: boaservers
+
+  tasks:
+  - name: Download JDK
+    get_url: url=https://www.dropbox.com/s/6cyvpjugczz6ze4/jdk-8u91-linux-x64.tar.gz?raw=1 dest=/tmp/test2.tar.gz
